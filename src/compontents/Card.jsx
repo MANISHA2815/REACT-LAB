@@ -1,8 +1,11 @@
-  export default function Card({fulname,occu}){
+  export default function Card({fullname,occ,nameChange}){
     return(
         <>
-        <h1>{fulname}</h1>
-        <h2>{occu}</h2>
+        <div>
+          <h1>{fullname}</h1>
+          <h2>{occ}</h2>
+        </div>
+        <button onClick={nameChange}>name change</button>
         </>
     )
 }

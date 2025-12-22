@@ -3,13 +3,18 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import DataDisplay from './compontents/Dashboard.jsx'
+import Dashboard from './compontents/Dashboard.jsx'
 
 function App() {
-  let name = "sdfg"
-  let occ = "developer"
-  
+  const [name,setName] = useState ("manisha")
+  const [occ,setOcc] = useState("developer")
+
+  function nameChange(){
+    setName("abii")
+    console.log(name)
+  }
   return (
-    <DataDisplay name={name} occu={occ} />
+    <Dashboard name={name} occ={occ} nameChange={nameChange}/>
 
   )
 }
