@@ -4,6 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import DataDisplay from './compontents/Dashboard.jsx'
 import Dashboard from './compontents/Dashboard.jsx'
+import Counter from './compontents/Counter.jsx'
+import Table from './compontents/Table.jsx'
 
 function App() {
   const [name,setName] = useState ("manisha")
@@ -14,8 +16,8 @@ function App() {
     console.log(name)
   }
   return (
-    <Dashboard name={name} occ={occ} nameChange={nameChange}/>
-
+    //<Dashboard name={name} occ={occ} nameChange={nameChange}/>
+    <Table/>
   )
 }
 
